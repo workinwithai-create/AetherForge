@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #0a0c10; color: #e0e6ef; }
+header { padding: 12px 16px; background: #11151c; border-bottom: 1px solid #222; }
+h1 { margin: 0; font-size: 1.4rem; }
+#status { font-size: 0.85rem; opacity: 0.8; margin-top: 4px; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px 16px; padding: 12px 16px; background: #141820; align-items: center; }
+.controls label { display: flex; align-items: center; gap: 6px; font-size: 0.9rem; }
+input, select, button { background: #1c222c; color: #e0e6ef; border: 1px solid #333; border-radius: 4px; padding: 4px 8px; }
+button { cursor: pointer; }
+button:hover { background: #252c38; }
+#recipes { display: flex; gap: 6px; }
+#playhead-wrap { height: 6px; background: #222; position: relative; margin: 0 16px; }
+#playhead { position: absolute; top: 0; left: 0; width: 2px; height: 100%; background: #4af; }
+#grids { padding: 12px 16px; }
+.chair { margin-bottom: 16px; }
+.chair-header { display: flex; gap: 12px; align-items: center; margin-bottom: 4px; font-size: 0.9rem; flex-wrap: wrap; }
+.grid { display: flex; flex-wrap: wrap; gap: 2px; }
+.step { width: 22px; height: 22px; background: #1a1f28; border: 1px solid #333; cursor: pointer; font-size: 0.6rem; display: flex; align-items: center; justify-content: center; }
+.step.on { background: #3a7; }
+.step.current { outline: 2px solid #4af; }
+#keyboard { display: flex; gap: 2px; padding: 12px 16px; flex-wrap: wrap; }
+.key { width: 28px; height: 80px; background: #222; border: 1px solid #444; cursor: pointer; display: flex; align-items: flex-end; justify-content: center; font-size: 0.7rem; padding-bottom: 4px; }
+.key:active, .key.held { background: #4af; }
+#tap-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.85); display: flex; align-items: center; justify-content: center; flex-direction: column; font-size: 1.5rem; z-index: 100; cursor: pointer; }
+#punch { padding: 12px 16px; font-size: 0.85rem; opacity: 0.9; white-space: pre-line; border-top: 1px solid #222; }
